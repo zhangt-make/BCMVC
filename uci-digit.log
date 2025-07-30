@@ -1,0 +1,42 @@
+2025-03-07 09:51:02,993 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 10:41:45,895 - INFO - ACCo:0.87450, NMIo:0.86042, Purityo:0.87450, ARIo:0.76906, Fscoreo:0.79338
+2025-03-07 10:42:20,943 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 10:43:35,541 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 10:44:54,666 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:30:25,676 - INFO - ACCo:0.95450, NMIo:0.92703, Purityo:0.95450, ARIo:0.90518, Fscoreo:0.91467
+2025-03-07 11:31:31,796 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:32:31,775 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:33:04,879 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:37:25,497 - INFO - {'seed': 10, 'batch_size': 345, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:40:11,975 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 30, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 11:43:04,671 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 50, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-07 12:54:40,666 - INFO - ACCo:0.98850, NMIo:0.97549, Purityo:0.98850, ARIo:0.97472, Fscoreo:0.97724
+2025-03-07 23:07:37,934 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 512, 'epochs': 40, 'mcl_weight': 10, 'device': 'cuda:0'}
+2025-03-07 23:39:52,920 - INFO - ACCo:0.98500, NMIo:0.97045, Purityo:0.98500, ARIo:0.96726, Fscoreo:0.97052
+2025-03-08 08:07:24,867 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 1024, 'epochs': 40, 'mcl_weight': 10, 'device': 'cuda:0'}
+2025-03-08 09:04:37,960 - INFO - ACCo:0.98850, NMIo:0.97549, Purityo:0.98850, ARIo:0.97472, Fscoreo:0.97724
+2025-03-09 19:33:35,696 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 40, 'mcl_weight': 10, 'device': 'cuda:0'}
+2025-03-09 19:52:09,226 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-03-09 19:53:55,030 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 128, 'epochs': 40, 'mcl_weight': 10, 'device': 'cuda:0'}
+2025-03-09 20:05:15,970 - INFO - ACCo:0.98500, NMIo:0.96685, Purityo:0.98500, ARIo:0.96692, Fscoreo:0.97021
+2025-03-13 17:10:45,583 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 40, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-13 17:30:09,797 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-03-13 17:35:27,965 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 60, 'mcl_weight': 1, 'device': 'cuda:0'}
+2025-03-13 18:05:51,502 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-03-16 14:53:11,498 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-03-16 15:11:42,135 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-03-19 09:39:00,256 - INFO - {'seed': 5, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-03-19 09:44:00,809 - INFO - ACCo:0.98400, NMIo:0.96848, Purityo:0.98400, ARIo:0.96518, Fscoreo:0.96865
+2025-03-19 09:47:44,885 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-03-19 09:54:59,141 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-04-15 15:44:42,083 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-05-14 21:31:06,495 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-05-14 21:36:25,033 - INFO - ACCo:0.99000, NMIo:0.97663, Purityo:0.99000, ARIo:0.97795, Fscoreo:0.98014
+2025-07-13 18:46:19,754 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 18:48:20,378 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 18:53:21,070 - INFO - ACCo:0.98800, NMIo:0.97260, Purityo:0.98800, ARIo:0.97354, Fscoreo:0.97617
+2025-07-13 18:53:32,578 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 18:55:12,992 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 19:02:56,468 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 19:03:22,124 - INFO - {'seed': 10, 'batch_size': 400, 'dataname': 'uci-digit', 'learning_rate': 0.0002, 'h_dims': [1024, 1024], 'low_feature_dim': 256, 'epochs': 35, 'mcl_weight': 1, 'mcl_cluster_weight': 10, 'k': 4, 'device': 'cuda:0'}
+2025-07-13 19:07:39,619 - INFO - ACCo:0.98600, NMIo:0.97180, Purityo:0.98600, ARIo:0.96941, Fscoreo:0.97245
