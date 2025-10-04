@@ -104,20 +104,6 @@ def loadData(data_name):
         features[0][0] = data['X1'].astype(np.float32)
         features[0][1] = data['X2'].astype(np.float32)
         gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'Caltech-3V' in data_name:
-        data_name='./data/Caltech-5V.mat'
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['X1'].astype(np.float32)
-        features[0][1] = data['X2'].astype(np.float32)
-        features[0][2] = data['X3'].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'BDGP' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = data['X1'].astype(np.float32)
-        features[0][1] = data['X2'].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32) 
     elif 'Scene15' in data_name:
         data = scipy.io.loadmat(data_name) 
         features = np.empty((1, 3), dtype=object)
@@ -125,32 +111,6 @@ def loadData(data_name):
         features[0][1] = data['X'][1][0].astype(np.float32)
         features[0][2] = data['X'][2][0].astype(np.float32)
         gnd = np.squeeze(data['Y']).astype(np.int32) 
-    elif 'prokaryotic' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        features[0][2] = data['X'][2][0].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32) 
-    elif 'LandUse-21' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][0][1].astype(np.float32)
-        features[0][2] = data['X'][0][2].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32) 
-    elif 'BBCSport' in data_name:
-        data = h5py.File(data_name)
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = np.array(data[data['X'][0][0]]).T.astype(np.float32)
-        features[0][1] = np.array(data[data['X'][0][1]]).T.astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    elif 'WikipediaArticles' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        gnd = data['Y'].astype(np.int32).reshape(693, )
     elif 'synthetic3d' in data_name:
         data = scipy.io.loadmat(data_name) 
         features = data['X']
@@ -163,40 +123,6 @@ def loadData(data_name):
         features[0][1] = data['mfeat_fou']
         features[0][2] = data['mfeat_kar']
         gnd = data['truth']
-    elif '100leaves' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = (data['X'][0][0].astype(np.float32))
-        features[0][1] = (data['X'][0][1].astype(np.float32))
-        features[0][2] = (data['X'][0][2].astype(np.float32))
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    # elif '100leaves' in data_name:
-    #     data = scipy.io.loadmat(data_name) 
-    #     features = np.empty((1, 3), dtype=object)
-    #     features[0][0] = (data['data'][0][0].astype(np.float32))
-    #     features[0][1] = (data['data'][0][1].astype(np.float32))
-    #     features[0][2] = (data['data'][0][2].astype(np.float32))
-    #     gnd = np.squeeze(np.array(data['truelabel'][0][0])).astype(np.int32)
-    elif 'handwritten' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 6), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        features[0][2] = data['X'][2][0].astype(np.float32)
-        features[0][3] = data['X'][3][0].astype(np.float32)
-        features[0][4] = data['X'][4][0].astype(np.float32)
-        features[0][5] = data['X'][5][0].astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    elif 'Mfeat' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 6), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        features[0][2] = data['X'][2][0].astype(np.float32)
-        features[0][3] = data['X'][3][0].astype(np.float32)
-        features[0][4] = data['X'][4][0].astype(np.float32)
-        features[0][5] = data['X'][5][0].astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
     elif 'ALOI100' in data_name:
         data = scipy.io.loadmat(data_name) 
         features = np.empty((1, 4), dtype=object)
@@ -205,64 +131,7 @@ def loadData(data_name):
         features[0][2] = data['X'][0][2].astype(np.float32)
         features[0][3] = data['X'][0][3].astype(np.float32)
         gnd = np.squeeze(data['Y']).astype(np.int32)
-    
-    elif 'ALOI' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][0][1].astype(np.float32)
-        features[0][2] = data['X'][0][2].astype(np.float32)
-        features[0][3] = data['X'][0][3].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'Caltech101-7' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 6), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        features[0][2] = data['X'][2][0].astype(np.float32)
-        features[0][3] = data['X'][3][0].astype(np.float32)
-        features[0][4] = data['X'][4][0].astype(np.float32)
-        features[0][5] = data['X'][5][0].astype(np.float32)
-        gnd=data['Y'].astype(np.int32).reshape(1474, )
-    elif 'Cora' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['coracites'].astype(np.float32)
-        features[0][1] = data['coracontent'].astype(np.float32)
-        features[0][2] = data['corainbound'].astype(np.float32)
-        features[0][3] = data['coraoutbound'].T.astype(np.float32)
-        gnd = np.squeeze(data['y']).astype(np.int32)
-    elif 'ORL' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][0][1].astype(np.float32)
-        features[0][2] = data['X'][0][2].astype(np.float32)
-        features[0][3] = data['X'][0][3].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'Hdigit' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = data['data'][0][0].T.astype(np.float32)
-        features[0][1] = data['data'][0][1].T.astype(np.float32)
-        gnd = np.squeeze(data['truelabel'][0][0]).astype(np.int32)
-    elif 'NGs' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['data'][0][0].T.astype(np.float32)
-        features[0][1] = data['data'][0][1].T.astype(np.float32)
-        features[0][2] = data['data'][0][2].T.astype(np.float32)
-        gnd = np.squeeze(data['truelabel'][0][0]).astype(np.int32)
-    elif 'MSRCv1' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 6), dtype=object)
-        features[0][0] = data['X'][0][0].astype('float32')
-        features[0][1] = data['X'][0][1].astype('float32')
-        features[0][2] = data['X'][0][2].astype('float32')
-        features[0][3] = data['X'][0][3].astype('float32')
-        features[0][4] = data['X'][0][4].astype(np.float32)
-        features[0][5] = data['X'][0][5].astype(np.float32)
-        gnd = data['Y'].astype(np.int32).reshape(210, )
+
     elif '3sources' in data_name:
         data = scipy.io.loadmat(data_name) 
         features = np.empty((1, 3), dtype=object)
@@ -270,21 +139,6 @@ def loadData(data_name):
         features[0][1] = data['data'][0][1].T
         features[0][2] = data['data'][0][2].T
         gnd = data['truelabel'][0][0]
-    elif 'webkb' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][0][1].astype(np.float32)
-        features[0][2] = data['X'][0][2].astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    elif 'BBC4view_685' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['X'][0][0].A.astype(np.float32)
-        features[0][1] = data['X'][0][1].A.astype(np.float32)
-        features[0][2] = data['X'][0][2].A.astype(np.float32)
-        features[0][3] = data['X'][0][3].A.astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
     elif 'cifar100' in data_name:
         data = scipy.io.loadmat(data_name) 
         features = np.empty((1, 3), dtype=object)
@@ -299,73 +153,6 @@ def loadData(data_name):
         features[0][1] = data['data'][1][0].T.astype(np.float32)
         features[0][2] = data['data'][2][0].T.astype(np.float32)
         gnd = np.squeeze(data['truelabel'][0][0]).astype(np.int32)
-    elif 'Reuters_21578' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 5), dtype=object)
-        features[0][0] = data['X'][0][0].toarray().astype(np.float32)
-        features[0][1] = data['X'][0][1].toarray().astype(np.float32)
-        features[0][2] = data['X'][0][2].toarray().astype(np.float32)
-        features[0][3] = data['X'][0][3].toarray().astype(np.float32)
-        features[0][4] = data['X'][0][4].toarray().astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'stl10_fea' in data_name:
-        # data_name='./data/stl10_fea.mat'
-        data = h5py.File(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = np.array(np.transpose(data[data['X'][0][0]])).astype(np.float32)
-        features[0][1] = np.array(np.transpose(data[data['X'][1][0]])).astype(np.float32)
-        features[0][2] = np.array(np.transpose(data[data['X'][2][0]])).astype(np.float32)
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    elif 'NUS_WIDE' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 5), dtype=object)
-        features[0][0] = data['fea'][0][0].astype(np.float32)
-        features[0][1] = data['fea'][0][1].astype(np.float32)
-        features[0][2] = data['fea'][0][2].astype(np.float32)
-        features[0][3] = data['fea'][0][3].astype(np.float32)
-        features[0][4] = data['fea'][0][4].astype(np.float32)
-        gnd = np.squeeze(data['gt']).astype(np.int32) 
-    elif 'CCV' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 3), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][1][0].astype(np.float32)
-        features[0][2] = data['X'][2][0].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32) 
-    elif 'Cora' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['coracites'].astype(np.float32)
-        features[0][1] = data['coracontent'].astype(np.float32)
-        features[0][2] = data['corainbound'].astype(np.float32)
-        features[0][3] = data['coraoutbound'].T.astype(np.float32)
-        gnd = np.squeeze(data['y']).astype(np.int32) 
-    elif 'RGB-D' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = data['X'][0][0].astype('float32')
-        features[0][1] = data['X'][1][0].astype('float32')
-        gnd = np.squeeze(data['Y']).astype(np.int32)
-    elif 'MNIST_USPS' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = (data['X1'].reshape(len(data['X1']), 784).astype(np.float32))
-        features[0][1] = (data['X2'].reshape(len(data['X1']), 784).astype(np.float32))
-        gnd = np.squeeze(np.array(data['Y'])).astype(np.int32)
-    elif 'BDGP' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 2), dtype=object)
-        features[0][0] = data['X1'].astype(np.float32)
-        features[0][1] = data['X2'].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32) 
-    elif 'Animal' in data_name:
-        data = scipy.io.loadmat(data_name) 
-        features = np.empty((1, 4), dtype=object)
-        features[0][0] = data['X'][0][0].astype(np.float32)
-        features[0][1] = data['X'][0][1].astype(np.float32)
-        features[0][2] = data['X'][0][2].astype(np.float32)
-        features[0][3] = data['X'][0][3].astype(np.float32)
-        gnd = np.squeeze(data['Y']).astype(np.int32)
     # elif 'STL10' in data_name:
     #     data=h5py.
     gnd = gnd.flatten()
@@ -848,25 +635,6 @@ class TESTNet(nn.Module):
         fusion_feature = torch.concat(zs_svd,dim=1)  # (batch, d_model)#[batch_size,d]
         return zs_svd, zs_r, fusion_feature,views_center
         # return zs, zs_r, fusion_feature
-    # def svd_weighting(self, A,device):
-    #     A = A.cpu().detach().numpy()    
-    #     U, s, VT = np.linalg.svd(A)
-    #     Sigma = np.diag(s)
-    #     weights = s / s.sum()
-
-    #     # 确保weights的形状与U、VT的列数匹配
-    #     num_components = min(U.shape[1], VT.shape[0])
-    #     weights = weights[:num_components]
-    #     weights = weights / weights.sum()
-
-    #     U_weighted = U[:, :num_components] * weights.reshape(1, -1)
-    #     VT_weighted = (VT[:num_components, :].T * weights.reshape(1, -1)).T
-
-    #     A_weighted = U_weighted @ Sigma[:num_components, :num_components] @ VT_weighted
-    #     A_weighted = torch.from_numpy(A_weighted)
-    #     A_weighted = A_weighted.to(device)
-    #     A_weighted.requires_grad_(True)
-    #     return A_weighted
     def svd_weighting(self, A, device):
         """
         直接对奇异值进行加权，增强主要信号，抑制噪声。
